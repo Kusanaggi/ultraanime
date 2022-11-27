@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#000000, #000000);
+}
+
+h1 {
+    color: #fff;
+}
+.textc{
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    color: aliceblue;
+    background-color: #a51b0b;
+    max-width: 450px;
+    min-height: 420px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 9px;
+    margin: 11px;
+    border-top: 10px;
+    border: solid 2.4px white; 
+}
+
+.box5,
+.box6,
+.box7,
+.box8 {
+    color: aliceblue;
+    background-color: #a51b0b;
+    max-width: 900px;
+    min-height: 440px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 9px;
+    margin: 11px;
+    border-top: 10px;
+    border: solid 3px white;
+}
+
+.box-netflix:hover {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+}
+
+.box-netflix img {
+    margin: 10px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.center img {
+    margin: 0 .1rem;
+}
+
+#watch:hover,
+#watch1:hover
+ {
+    color: #000000;
+    background-color: white;
+    box-shadow: 0 0 15px 10px white;
+
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #ffff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: orange;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: goldenrod;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+
+}
+
+.login-box a:hover {
+    background: goldenrod;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px goldenrod,
+        0 0 25px goldenrod,
+        0 0 50px goldenrod,
+        0 0 100px goldenrod;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+#box-sem-carousel {
+    display: none;
+}
+
+
+    
+
+@media (width < 1900px) {
+    #catalogo {
+        display: inline;
+    }
+
+    
+}
+@media (width < 1360px) {
+    #catalogo {
+        display: none;
+    }
+    #box-sem-carousel  {
+        display: flex;
+    }
+}
+
+@media (width < 1000px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        min-height: 220px;
+    }
+
+    #naruto,
+    #boruto,
+    #crunchyroll,
+    #trailer,
+    #trailer1,
+    #trailer2,
+    #trailerDemon {
+        width: 95vw;
+    }
+}

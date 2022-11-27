@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="meuestilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <title>UltraNime</title>
+
+</head>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar col-12 position-sticky navbar-expand-lg navbar-dark bg-dark" style="z-index:999;">
+  <div class="container-fluid col-11 m-auto">
+    <a class="navbar-brand" href="#">UltraNime</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" id="inicio" link="#">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Informações
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#info">Sobre os animes!</a></li>
+            <li><a class="dropdown-item" href="#trailer">Trailers</a></li>
+            <li><a class="dropdown-item" href="#catalogo">Catálogo</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#cont">Contate-nos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <li>
+        <a class="link" href="teste.html">
+          <button type="button" class="btn btn-light" id="log">Login</button>
+        </a>
+      </li>
+    </div>
+  </div>
+</nav>
+
+<body bgcolor="#ff0000">
+
+  <!--carousel-->
+  <div id="carouselExampleDark1" class="carousel carousel-fade slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="10" aria-label="Slide 11"></button>
+      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="img/attack.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Shingeki no Kyojin</h1>
+          <p><div class="btn btn-dark">Ação, Aventura, Terror, Drama, Ficção Pós-Apocaliptica, Fantasia Sombria.</p></div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/jujutsu.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Jujutsu Kaisen</h1>
+          <p class="btn btn-dark">Ficção de aventura, Ficção Supernatural, Fantasia Sombria.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/onepiece.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>One Piece</h1>
+          <p class="btn btn-dark">Comédia, Aventura, Ação, Fantasia, Drama. </p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/kimetsu.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Kimetsu no Yaiba</h1>
+          <p class="btn btn-dark">Ficção de Aventura, Artes Marciais, Fantasia Sombria.</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/bleachcar.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Bleach</h1>
+          <p><div class="btn btn-dark">Ficção de Aventura, Ficção Sobrenatural.</div></p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/saocar.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Sword art Online</h1>
+          <p class="btn btn-dark">Ficção de Científica, Aventura, Suspense, Ação, Luta.</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/mushokucar.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Mushoku Tensei</h1>
+          <p class="btn btn-dark">Drama, Fantasia, Aventura, Magia.</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/firecar2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Enen Shouboutai</h1>
+          <p class="btn btn-dark">Drama, Fantasia Científica, Fantasia Sombria, Aventura.</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/kaguyacar.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Kaguya-Sama: Love Is War</h1>
+          <p class="btn btn-dark">Comédia Romântica</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/narutocar.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Naruto Shippuden</h1>
+          <p class="btn btn-dark">Ação, Aventura, Comédia, Drama.</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="3000">
+        <img src="img/onepunchcar1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>One Punch-Man</h1>
+          <p class="btn btn-dark">Ação, SuperHero Comics, Comédia.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br><br><br>
+  <h1>
+    <center id="textc" > Catálogo de animes </center>
+  </h1>
+  <br>
+
+  <div id="catalogo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="4000">
+        <div class="center">
+          <img src="img/tbbleach.jpg" alt="...">
+          <img src="img/jujutsukai.jpg" alt="...">
+          <img src="img/tbsao.jpg" alt="...">
+          <img src="img/tbonepunch.jpg" alt="...">
+          <img src="img/narutin.jpg" alt="...">
+          
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <div class="center">
+          <img src="img/tb2demon.jpg" alt="...">
+          <img src="img/tb2attack.jpg" alt="...">
+          <img src="img/tb2fire.jpg" alt="...">
+          <img src="img/tb2mushoku.jpg" alt="...">
+          <img src="img/hellsing.jpg" alt="...">
+          
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <div class="center">
+          <img src="img/horimiya.jpg" alt="...">
+          <img src="img/tbkaguya.jpg" alt="...">
+          <img src="img/tbmydress.jpg" alt="...">
+          <img src="img/tbbunny.jpg" alt="...">
+          <img src="img/foxu.jpg" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <div class="center">
+          <img src="img/miekuro.jpg" alt="...">
+          <img src="img/platinum.jpg" alt="...">
+          <img src="img/senpai.jpg" alt="...">
+          <img src="img/genius.jpg" alt="...">
+          <img src="img/hero.jpg" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="box-sem-carousel" class="box-netflix">
+    <img src="img/tbbunny.jpg" alt="...">
+    <img src="img/tbmydress.jpg" alt="...">
+    <img src="img/tbsao.jpg" alt="...">
+    <img src="img/tbonepunch.jpg" alt="...">
+    <img src="img/tbkaguya.jpg" alt="...">
+    <img src="img/jujutsukai.jpg" alt="...">
+    <img src="img/tbbleach.jpg" alt="...">
+    <img src="img/tb2demon.jpg" alt="...">
+    <img src="img/tb2attack.jpg" alt="...">
+    <img src="img/tb2fire.jpg" alt="...">
+    <img src="img/tb2mushoku.jpg" alt="...">
+    <img src="img/tb2basket.jpg" alt="...">
+    <img src="img/tb2nora.jpg" alt="...">
+    <img src="img/tb2code.jpg" alt="...">
+  </div>
+
+
+  <br><br><br>
+  <br><br><br>
+
+  <div class="box-amostra"> <center><h1 id="textc"> Confira abaixo os melhores momentos na MINHA opinião!(Alerta de <b>SPOILER</b>)</h1></center><br><br>
+    <center>
+      <video align="left" id="a1" src="video/KimetsuFight.mp4" width="420" height="180" controls="true" autoplay="autoplays">
+      </video>
+      <video src="video/JujutsuFight.mp4" id="a2" width="420" height="180" controls="true" autoplay="true">
+      </video>
+      <video align="right" id="a3" src="video/AttackFight.mp4" width="420" height="180" controls="true" autoplay="true">
+    </video>
+  </center>
+</div>
+  
+  <br><br><br>
+
+  <center>
+    <img id="naruto" src="video/kimetsugif.gif" alt="..." >
+  </center>
+
+  <br><br><br>
+
+
+
+  <!--Div boxes-->
+  <div class="container" id="info">
+    <div class="box1">
+      <h1 align="center">ATTACK ON TITAN</h1>
+      <p>Para escapar dos titãs, gigantes devoradores de homens, a humanidade se refugiou em cidades cercadas por
+        enormes muralhas. Quando eles voltam a atacar, Eren Yeager se junta à luta para combater as criaturas.
+        <br><br>
+        <strong>
+          Protogonista:
+        </strong> Eren Yeager
+        <br>
+        <strong> Ano de lançamento:</strong> 2013
+        <br>
+        <strong> Estúdio: </strong> Toho Co., Ltd.
+
+
+      </p>
+      <div>
+      
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch">Assistir</button></h1>
+        <a class="link" href="#trailer">
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch1">Assistir ao Trailer</button></h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="box2">
+      <h1 align="center">JUJUTSU KAISEN</h1>
+      <p>
+        Apesar do estudante Yuuji Itadori ter grande força física, ele se inscreve no Clube de Ocultismo.
+        Certo dia, eles encontram um “objeto amaldiçoado” e retiram o selo, atraindo criaturas chamadas de
+        “maldições”.
+        <br><br>
+        <strong> Protagonista: </strong> Itadori Yuiji
+        <br>
+        <strong> Ano de lançamento:</strong> 2020
+        <br>
+        <strong>Estúdio: </strong> Mappa
+      </p>
+
+
+      <div>
+        
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch">Assistir</button></h1>
+      
+        <a class="link" href="#trailer1">
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch1">Assistir ao Trailer</button></h1>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="container" id="info2">
+    <div class="box3">
+      <h1 align="center">ONE PIECE</h1>
+      <p>One Piece segue a história de um grupo de piratas liderado por Monkey D. Luffy. O garoto, que possui um corpo
+        elástico, pretende se tornar o Rei dos Piratas e para isso deve encontrar o One Piece, tesouro misterioso
+        capaz de torná-lo imbatível, segundo as lendas.
+        <br><br>
+        <strong> Protagonista: </strong> Monkey D. Luffy
+        <br>
+        <strong> Ano de lançamento:</strong> 1999
+        <br>
+        <strong>Estúdio: </strong> Toei Animation Co., Ltd
+      </p>
+      <div>
+        
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch">Assistir</button></h1>
+        
+        <a class="link" href="#trailer2">
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch1">Assistir ao Trailer</button></h1>
+        </a>
+      </div>
+    </div>
+    <div class="box4">
+      <h1 align="center">KIMETSU NO YAIBA</h1>
+      <p>
+        Tanjiro teve sua família foi massacrada por um demônio. Nezuko, sua irmã mais nova e única sobrevivente,
+        também
+        foi transformada num demônio. Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser
+        humana, e para matar o demônio que matou sua família.
+        <br><br>
+        <strong> Protagonista: </strong> Kamado Tanjiro
+        <br>
+        <strong> Ano de lançamento:</strong> 2019
+        <br>
+        <strong>Estúdio: </strong> Ufotable
+      </p>
+      <div>
+      
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch">Assistir</button></h1>
+
+        <a class="link" href="#trailerDemon">
+          <h1 align="center"><button type="button" class="btn btn-dark" id="watch1">Assistir ao Trailer</button></h1>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <center> <a href="https://www.crunchyroll.com/pt-br"><img id="crunchyroll" src="img/anuncio.png"
+        alt="..."></button></a></center>
+  <br><br><br>
+
+  <h1 align="center">Confira abaixo os trailers</h1> <br><br>
+
+
+  <div class="container">
+    <div class="box5">
+
+      <iframe id="trailer" width="853" height="480" src="https://www.youtube.com/embed/JXyz-XoMqPA"
+        title="Trailer de Shingeki no Kyojin - Legendado" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="box6">
+      <iframe id="trailer1" width="853" height="480" src="https://www.youtube.com/embed/ynr6gnyu9NE"
+        title="JUJUTSU KAISEN | TRAILER OFICIAL" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container">
+    <div class="box7">
+      <iframe id="trailer2" width="853" height="480" src="https://www.youtube.com/embed/lCIECoVKc_U"
+        title="One Piece: Stampede | Trailer Legendado PT (HD)" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="box8">
+      <iframe width="853" height="480" id="trailerDemon" src="https://www.youtube.com/embed/tJxCxCWksOY"
+        title="Demon Slayer: Kimetsu no Yaiba Entertainment District Arc | TRAILER OFICIAL" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
+  <br><br>
+
+
+  <center><a href="https://www.crunchyroll.com/pt-br/watch/G6X0QPE7Y/boruto-uzumaki"><img id="boruto"
+        src="img/boruto.png" alt="..."></a></center>
+  <br><br><br>
+
+
+
+  <center><button type="button" id="toppage" class="btn btn-dark"><a class="nav-link active" aria-current="page"
+        href="#">Voltar ao
+        início</a></center>
+  <br><br>
+
+
+  <!--Direitos-->
+  <footer id="cont" class="page-footer p-5 col-12 m-auto">
+    <div class="text-center">
+      <a href="#cont">gabthegod@support.com</a>
+    </div>
+  </footer>
+
+
+</body>
+
+
+</html>
